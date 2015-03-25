@@ -1,0 +1,19 @@
+--- tools/rmlbuild/rmlbuild/start.sh	2015-02-24 22:29:42.000000000 -0500
++++ ../tools/rmlbuild/rmlbuild/start.sh	2015-02-24 22:29:42.000000000 -0500
+@@ -74,6 +74,7 @@
+ ocamlc -c plugin.mli
+ ocamlc -c plugin.ml
+ ocamlc -c ocaml_dependencies.ml
++ocamlc -c rml_specific.ml
+ ocamlc -c exit_codes.ml
+ ocamllex lexers.mll
+ ocamlc -c lexers.ml
+@@ -113,7 +114,7 @@
+ ocamlc -c report.ml
+ ocamlc -c solver.ml
+ ocamlc -c ocamlbuildlight.mli
+-ocamlc -pack ocamlbuild_Myocamlbuild_config.cmo discard_printf.cmo my_std.cmo bool.cmo glob_ast.cmo glob_lexer.cmo glob.cmo lexers.cmo my_unix.cmo tags.cmo display.cmo log.cmo param_tags.cmo shell.cmo slurp.cmo ocamlbuild_where.cmo command.cmo options.cmo pathname.cmo digest_cache.cmo resource.cmo rule.cmo flags.cmo solver.cmo report.cmo ocaml_arch.cmo hygiene.cmo configuration.cmo tools.cmo fda.cmo plugin.cmo ocaml_utils.cmo ocaml_dependencies.cmo ocaml_compiler.cmo ocaml_tools.cmo hooks.cmo findlib.cmo ocaml_specific.cmo exit_codes.cmo main.cmo -o ocamlbuild_pack.cmo
++ocamlc -pack ocamlbuild_Myocamlbuild_config.cmo discard_printf.cmo my_std.cmo bool.cmo glob_ast.cmo glob_lexer.cmo glob.cmo lexers.cmo my_unix.cmo tags.cmo display.cmo log.cmo param_tags.cmo shell.cmo slurp.cmo ocamlbuild_where.cmo command.cmo options.cmo pathname.cmo digest_cache.cmo resource.cmo rule.cmo flags.cmo solver.cmo report.cmo ocaml_arch.cmo hygiene.cmo configuration.cmo tools.cmo fda.cmo plugin.cmo ocaml_utils.cmo ocaml_dependencies.cmo ocaml_compiler.cmo ocaml_tools.cmo hooks.cmo findlib.cmo ocaml_specific.cmo rml_specific.cmo exit_codes.cmo main.cmo -o ocamlbuild_pack.cmo
+ ocamlc -c ocamlbuildlight.ml
+ ocamlc ocamlbuild_pack.cmo ocamlbuildlight.cmo -o ../ocamlbuild.byte.start
+ cd ..

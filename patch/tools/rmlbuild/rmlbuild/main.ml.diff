@@ -1,0 +1,10 @@
+--- tools/rmlbuild/rmlbuild/main.ml	2015-02-24 22:29:42.000000000 -0500
++++ ../tools/rmlbuild/rmlbuild/main.ml	2015-02-24 22:29:42.000000000 -0500
+@@ -145,6 +145,7 @@
+ 
+   Hooks.call_hook Hooks.Before_rules;
+   Ocaml_specific.init ();
++  Rml_specific.init ();
+   Hooks.call_hook Hooks.After_rules;
+ 
+   Param_tags.init ();

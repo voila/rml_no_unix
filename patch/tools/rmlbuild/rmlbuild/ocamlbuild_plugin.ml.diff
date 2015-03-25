@@ -1,0 +1,10 @@
+--- tools/rmlbuild/rmlbuild/ocamlbuild_plugin.ml	2015-02-24 22:29:42.000000000 -0500
++++ ../tools/rmlbuild/rmlbuild/ocamlbuild_plugin.ml	2015-02-24 22:29:42.000000000 -0500
+@@ -37,6 +37,7 @@
+ let pdep = Command.pdep
+ let copy_rule = Rule.copy_rule
+ let ocaml_lib = Ocamlbuild_pack.Ocaml_utils.ocaml_lib
++let rml_lib = Ocamlbuild_pack.Rml_specific.rml_lib
+ let flag = Ocamlbuild_pack.Flags.flag
+ let pflag = Ocamlbuild_pack.Flags.pflag
+ let flag_and_dep = Ocamlbuild_pack.Ocaml_utils.flag_and_dep

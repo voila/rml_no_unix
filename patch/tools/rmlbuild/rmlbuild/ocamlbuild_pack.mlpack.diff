@@ -1,0 +1,10 @@
+--- tools/rmlbuild/rmlbuild/ocamlbuild_pack.mlpack	2015-02-24 22:29:42.000000000 -0500
++++ ../tools/rmlbuild/rmlbuild/ocamlbuild_pack.mlpack	2015-02-24 22:29:42.000000000 -0500
+@@ -39,4 +39,5 @@
+ Exit_codes
+ Digest_cache
+ Findlib
+-Param_tags
+\ No newline at end of file
++Param_tags
++Rml_specific
